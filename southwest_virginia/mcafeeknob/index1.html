@@ -3,67 +3,53 @@
 <style>
 
 
-h1 {
-    text-align: center;
-    color: white;
-    font-family: chalkduster;
-    font-size: 300%;
-    margin-top:0.75em; margin-bottom;0.75em;
-}
-p  {
-    text-align: center;
-    color: white;
-    font-family: footlight mt light;
-    font-size: 120%;
-    margin-top:2em; margin-bottom:2em
-}
-body {
-    background-color: #660000;
-    link=orange
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+ul.nav {
+    width:100%;
+    margin:0 auto;
+    padding:0;
+    list-style:none;
     background-color: #333;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 74px;
-    text-decoration: underline;
+    text-align:center;
     font-family: chalkduster;
+}
+.nav li {
+    display:inline-block;
+    width:33%;
+    margin:0;
+    padding:0;
+}
+.nav a {
+    text-align:center;
+    padding:12px 0 13px 0;
+    margin:0;
+    border-left: 1px ;
+    border-right: 1px 
+    display:block;
+}
+.active {
+    background-color: #ff6600;
 }
 
 li a:hover:not(.active) {
     background-color: #111;
 }
 
-.active {
-    background-color: #ff6600;
+ul.nav li:first-child a{
+    border:none;
 }
 
 </style>
 </head>
 <body link=#ff6600>
 
-<nav>
-  <ul>
-      <li><a href="#aboutme">About Me</a></li>
-      <li><a class="active" href="https://ritterchristian.github.io/southwest_virginia/heritagepark/index.html">Heritage Park</a></li>
-      <li><a href="https://ritterchristian.github.io/southwest_virginia/mcafeeknob/index.html">McAfee Knob</a></li>
-      <li><a href="#cascades">Cascades</a></li>
-      <li><a href="#interview">Interview</a></li>
-    </ul>
-<nav>
+
+<ul class="nav">
+    <li><a href="#">Search</a></li>
+    <li><a href="#">Legend</a></li>
+    <li><a href="#">Info</a></li>
+</ul>
+</nav>
+<div id="map_canvas" style="position:absolute;left:0;right:0;"></div>
 
 <h1>Heritage Park</h1>
 <p>
